@@ -1,0 +1,39 @@
+<section class="p-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="card animated flipInY">
+          <div class="card-header bg-success text-white">
+            <h3>Add Employee</h3>
+          </div>
+          <div class="card-body bg-light">
+            <form (ngSubmit)="addEmployee()">
+              <div class="form-group">
+                <input [(ngModel)]="employee.first_name" name="first_name" type="text" class="form-control" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <input [(ngModel)]="employee.last_name" name="last_name" type="text" class="form-control" placeholder="Last Name">
+              </div>
+              <div class="form-group">
+                <input [(ngModel)]="employee.email" name="email" type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <select [(ngModel)]="employee.gender" name="gender" class="form-control">
+                  <option value="">Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input [(ngModel)]="employee.ip_address" name="ip_address" type="text" class="form-control" placeholder="IP Address">
+              </div>
+              <div>
+                <input type="submit" value="Add Employee" class="btn btn-success">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

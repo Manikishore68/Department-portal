@@ -1,0 +1,80 @@
+Employee Portal Application Rest API
+-------------------------------------
+Read All Employees
+------------------
+url : 127.0.0.1:3000/api/employees
+method : GET
+express JS : router.get('/employees');
+
+Read a single Employee
+-----------------------
+url: 127.0.0.1:3000/api/employees/56
+method: GET
+express JS : router.get('/employees/:id');
+
+Create  a new employee
+----------------------
+url: 127.0.0.1:3000/api/employees
+method: POST
+express JS : router.post('/employees');
+
+Update an exising employee
+---------------------------
+url: 127.0.0.1:3000/api/employees/56
+method: PUT
+express JS : router.put('/employees/:id');
+
+Delete an employee
+-------------------
+url: 127.0.0.1:3000/api/employees/56
+method: DELETE
+express JS : router.delete('/employees/:id');
+
+--------------------
+Departments REST API
+--------------------
+Read All departments
+------------------
+url : 127.0.0.1:3000/api/departments
+method : GET
+express JS : router.get('/departments');
+
+Read a single department
+-----------------------
+url: 127.0.0.1:3000/api/departments/56
+method: GET
+express JS : router.get('/departments/:id');
+
+Create  a new department
+----------------------
+url: 127.0.0.1:3000/api/departments
+method: POST
+express JS : router.post('/departments');
+
+Update an exising department
+---------------------------
+url: 127.0.0.1:3000/api/departments/56
+method: PUT
+express JS : router.put('/departments/:id');
+
+Delete an department
+-------------------
+url: 127.0.0.1:3000/api/departments/56
+method: DELETE
+express JS : router.delete('/departments/:id');
+
+-------------------------------------------------
+Client -> 4200
+Express Server -> 3000
+Mongo DB -> 27017
+
+--------------------------------------------------
+Front End Setup
+--------------------------------------------------
+Components : -> navbar , add-employee ,update-employee , home-page
+services : -> employee.service
+model -> IEmployee
+
+
+
+
